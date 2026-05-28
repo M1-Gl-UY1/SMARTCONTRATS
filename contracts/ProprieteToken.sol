@@ -27,6 +27,11 @@ contract ProprieteToken is ERC20, Ownable {
         _mint(address(this), _nombreParts);
     }
 
+    /// Une part est une unite indivisible : 0 decimale (sinon _mint(N) creerait N*10^-18 token).
+    function decimals() public pure override returns (uint8) {
+        return 0;
+    }
+
     function acheterParts(uint256 nombreParts) external payable {
         require(nombreParts > 0, "Quantite invalide");
         require(msg.value == nombreParts * prixParPart, "Montant incorrect");
