@@ -55,17 +55,17 @@ Sortie attendue :
 ============================================================
 OK - RevenueDistribution deploye
 ============================================================
-Adresse  : 0x5F24D4e615e60C2cfA959CfDFcf82c7937A969b9
+Adresse  : 0xdCefF1bd93996e1927E5998b8e0bB63a23A5b1Dd
 Tx       : 0xbaace75bd136a502...
-Etherscan: https://sepolia.etherscan.io/address/0x5F24...969b9
+Etherscan: https://sepolia.etherscan.io/address/0xdCefF1...b1Dd
 >>> Mettre cette adresse dans le .env du backend :
-    BLOCKCHAIN_CONTRACT_ADDRESS=0x5F24D4e615e60C2cfA959CfDFcf82c7937A969b9
+    BLOCKCHAIN_CONTRACT_ADDRESS=0xdCefF1bd93996e1927E5998b8e0bB63a23A5b1Dd
 ```
 
 ### 3. (Optionnel) Verifier le source sur Etherscan
 
 ```bash
-npx hardhat verify --network sepolia 0x5F24D4e615e60C2cfA959CfDFcf82c7937A969b9
+npx hardhat verify --network sepolia 0xdCefF1bd93996e1927E5998b8e0bB63a23A5b1Dd
 ```
 
 ### 4. Deployer un `ProprieteToken` (une fois par bien immobilier)
@@ -86,7 +86,7 @@ Le backend Spring Boot consomme ces contrats via Web3j. Les vars d'env a configu
 
 ```env
 BLOCKCHAIN_RPC_URL=https://eth-sepolia.g.alchemy.com/v2/<KEY>
-BLOCKCHAIN_CONTRACT_ADDRESS=0x5F24D4e615e60C2cfA959CfDFcf82c7937A969b9   # RevenueDistribution
+BLOCKCHAIN_CONTRACT_ADDRESS=0xdCefF1bd93996e1927E5998b8e0bB63a23A5b1Dd   # RevenueDistribution
 BLOCKCHAIN_OWNER_PRIVATE_KEY=0x<cle privee owner>
 BLOCKCHAIN_CHAIN_ID=11155111
 BLOCKCHAIN_GAS_PRICE=2000000000
